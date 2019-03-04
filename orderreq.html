@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <script type = "text/javascript" src = "js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/orders.css" />
+    
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />-->
+    <title>Zoom Smart</title>
+</head>
+
+<body>
+    <div class="app2">
+        <div class = "menu">
+            <span id = "menuheader">
+                <input type = "button" value = "&times;" onclick = "closeMenu();" id = "closebtn" />
+            </span>
+            <div class = "profilebody">
+                <ul>
+                    <li>
+                        <span class = "avatarinput"></span><a href = "profile.html" id = "profilename"></a>
+                        <script type = "text/javascript">
+                                var avatar = localStorage.getItem("user_avatar");
+                               avatar = "http://localhost/zoomsmartappapis/"+avatar;
+                               $(".avatarinput").css({"display" : "inline-block", "float" : "left", "width" : "40px", "height" : "40px"});
+                               $(".avatarinput").css({"border" : "1px solid black", "border-radius" : "20px", "background-image" : "url('"+avatar+"')"});
+                               $(".avatarinput").css({"background-position" : "center", "background-size" : "cover", "background-repeat" : "no-repeat"});
+                        </script>
+                    </li><br /><br /><br />
+                    <li><a href = "history.html">Order history</a></li>
+                    <li><a href = "Payments.html">Payments history</a></li>
+                    <li><a href = "wallet.html">Wallet</a></li>
+                    <li><a href = "help.html">Help</a></li>
+                    <li><a href = "faq.html">FAQ</a></li>
+                    <li><input type = "button" value = "Logout" onclick = "logout();" id = "logoutbtn"/></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class = "mainapp">
+            <span class = "mainappheader">
+                <span id = "mainappheaderleft"><img src = "img/menubtn.png" id = "menubtn" onclick = "openMenu();"/></span>
+                <span id = "mainappheaderlogo"><center><img src = "img/Zoom new PNG 2.png" style = "max-width: 70px;" id= "logo2"/></center></span>
+            </span>
+            <div id = "mainappbody2">
+               
+               
+                    <input type = "text" placeholder = "Enter a Destination" />
+                    <div id="map"></div>                    
+              
+            </div>
+            <div id = "mainappfooter">
+                <ul>
+                    <li><center><a href = "orders.html" style = "color: grey;"><img src = "img/home.png" /><br />Home</a></center></li>
+                    <li><center><img src = "img/clock.png" /><br />History</center></li>
+                    <li><center><img src = "img/dollar.png" /><br />Payment</center></li>
+                    <li><center><img src = "img/user.png" /><br />Profile</center></li>
+                </ul>
+            </div>
+
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script> 
+    <script type="text/javascript">
+      fetchNameOrders();
+      function initMap() {
+  // The location of Uluru
+    var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+     var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+     var marker = new google.maps.Marker({position: uluru, map: map});
+    }      
+    </script>
+</body>
+
+</html>

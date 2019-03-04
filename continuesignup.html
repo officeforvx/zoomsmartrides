@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <script type = "text/javascript" src = "js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />-->
+    <title>Zoom Smart</title>
+</head>
+
+<body>
+    <div class="app" id = 'signupdiv' style = 'background: white;'>
+        <div class = 'signupbox2'>
+            <center style = 'color: black'>
+                <div class = 'welcomeuser'>
+                        <span class = 'wlcm'>Welcome &nbsp;</span><span class = 'welcomeinput'>
+
+                        </span><br /> <br />
+
+                    <div id = 'useravatar'>
+                        <img src = "img/default.png" style = "max-width: 100px;" id = "fakeavatar" />
+                    </div>
+                    <br />
+
+                <form id = "form" action = "" method = "post" enctype = "multipart/form-data">
+                    <input type = 'file' style = "display: none;" name = "image" id = "imageuploader" onchange = "uploadImage(this);"/>
+                    <!--<input type = "submit" value = "submit" id = "submitbtn" class = "btn" />-->
+                </form>
+                    <input type = "button" value = "Upload Image" id = "imgupload" onclick = "triggerFile();" />
+
+                </div>
+</center><br />
+            <input type = 'number' placeholder = 'Phone Number' class = 'tbox' id = 'phonenumber' /><br />
+            <textarea placeholder = "Address In full" id = 'address' class = "tbox"></textarea><br />
+           
+            <br /><br /><br />
+            <input type = 'button' value = 'Complete' onclick = 'completeSignup(this);' id = 'signupnbtn2'  />
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+ 
+ 
+    <script type="text/javascript">
+      fetchUserName();
+    </script>
+</body>
+
+</html>

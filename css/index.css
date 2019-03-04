@@ -1,0 +1,222 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+.app{
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 90%;
+    background: white;
+    padding-bottom: 0%;
+    margin-top: 5%;
+}
+.app2{
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 90%;
+    background: white;
+    padding-bottom: 0%;
+    margin-top: 0%;
+}
+
+#accountsmodal{
+    display: block;
+    float: left;
+    width: 70%;
+    padding: 0%;
+    margin-left: 13%;
+    margin-top: 0%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#fbicon{
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+.elemitem{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#toplogo{
+    max-width: 150px;
+}
+#slidermodal{
+    display: block;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    height: 250px;
+    background: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 45%;
+    height: 25px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 5px;
+
+}
+
+#loginbtn{
+    display: inline-block;
+    float: right;
+}
+#signupbtn{
+    display: inline-block;
+    float: left;
+}
+
+.li{
+    color: yellow;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.microtext{
+    color: grey;
+    font-size: 80%;
+}
+.yellow{
+    color: yellow;
+}
+
+.backbtn{
+    font-size: 150%;
+    font-weight: bolder;
+    color: black;
+    margin: 5%;
+}
+
+.signupbox{
+    display: block;
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%;
+}
+
+.signupbox2{
+    display: block;
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.tbox{
+    display: block;
+    float: left;
+    width: 98%;
+    padding: 2%;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+
+#signupnbtn{
+    display: block;
+    float: left;
+    width: 98%;
+    padding: 2%;
+    height: 30px;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    margin-bottom: 7px;  
+    background: #003366;
+    color: white; 
+}
+#signupnbtn2{
+    display: block;
+    float: left;
+    width: 98%;
+    padding: 2%;
+    height: 30px;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    margin-bottom: 0px;  
+    background:rgb(6, 168, 6);
+    color: white;
+    margin-top: 10px;
+}
+
+#signupdiv{
+    background-size: 100%;
+    background-position-y: 400px;
+    background-repeat: no-repeat;
+}
+
+.welcomeuser{
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border: 0px solid black;
+}
+
+.welcomeinput{
+    color: rgb(165, 163, 163);
+    font-weight: lighter;
+}
+
+.wlcm{
+    color: black;
+    font-weight: bolder;
+    font-size: 120%;
+}
+
+#imgupload{
+    display: block;
+    float: left;
+    width: 150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    background: yellow;
+    padding: 5px;
+    border: 2px solid rgb(228, 228, 4);
+    border-radius: 6px;
+    background-image: url("../img/cam.png");
+    background-size: 30px;
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#address{
+    height: 70px;
+    resize: none;
+}
+
