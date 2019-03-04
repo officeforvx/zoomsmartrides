@@ -4,14 +4,35 @@
     box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: BasisGrotesque;
+    src: url(../font/BasisGrotesquePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: BasisGrotesqueLight;
+    src: url(../font/BasisGrotesquePro-Light.ttf);
+}
+
+@font-face {
+    font-family: BasisGrotesqueBold;
+    src: url(../font/BasisGrotesquePro-Bold.ttf);
+}
+
+
 html, body{
     width: 100%;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: BasisGrotesque, sans-serif;
 }
+
+
 input{
     outline: none;
 }
+
+
 a{
     text-decoration: none;
 }
@@ -24,6 +45,45 @@ a{
     padding-bottom: 0%;
     margin-top: 5%;
 }
+
+
+.splash {
+    float: left;
+    display: block;
+    max-width: 100%;
+    
+}
+.splash img{
+    display: block;
+    float: left;
+    max-width: 100%;
+}
+
+.copy {
+    display: block;
+    width: 100%;
+    margin-left: 10%;
+    font-size: 24px;
+    /* line-height: 1.5em; */
+    font-family: BasisGrotesqueBold, sans-serif;
+    color: #1d1d1d;
+}
+
+.color {color: #f8b038;}
+
+.copy p {
+    padding-top: 3%;
+    font-family: BasisGrotesque, sans-serif;
+    font-size: 12px;
+    line-height: 1.7em;
+    color: #2d2e40;
+}
+
+.g_started {
+    font-family: BasisGrotesqueBold, sans-serif;
+}
+
+
 .app2{
     display: block;
     float: left;
@@ -37,9 +97,9 @@ a{
 #accountsmodal{
     display: block;
     float: left;
-    width: 70%;
+    width: 80%;
     padding: 0%;
-    margin-left: 13%;
+    margin-left: 10%;
     margin-top: 0%;
     border: 1px solid white;
     border-radius: 5px;
@@ -58,22 +118,11 @@ a{
     text-align: center;
 }
 
-#toplogo{
-    max-width: 150px;
-}
-#slidermodal{
-    display: block;
-    float: left;
-    width: 90%;
-    margin-left: 5%;
-    height: 250px;
-    background: grey;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
+
 .btn{
     width: 45%;
-    height: 25px;
+    height: 30px;
     background: white;
     border: 1px solid black;
     border-radius: 5px;
@@ -91,8 +140,13 @@ a{
     float: left;
 }
 
+.btn a {
+    font-family: BasisGrotesque, sans-serif;
+}
+
+
 .li{
-    color: yellow;
+    color: #f9b851;
     font-size: 80%;
     text-decoration: none;
 }
@@ -102,7 +156,7 @@ a{
     font-size: 80%;
 }
 .yellow{
-    color: yellow;
+    color: #f9b851;
 }
 
 .backbtn{
